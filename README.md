@@ -1,2 +1,2 @@
 # ilkom-23-os-kelompok-6
-# saya aya
+docker adalah sebuah sistem manajemen server berbasis CI/CD
