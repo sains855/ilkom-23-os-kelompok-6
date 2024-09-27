@@ -8,6 +8,6 @@ def worker(thread_name):
 
 thread1 = threading.Thread(target=worker, args=('A'))
 thread2 = threading.Thread(target=worker, args=('B'))
-
+#Mulai Thread
 thread1.start()
 thread2.start()
