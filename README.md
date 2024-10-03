@@ -3,9 +3,10 @@ docker adalah sebuah sistem manajemen server berbasis CI/CD.
 Docker adalah platform open-source yang memudahkan pengembangan, pengiriman, dan menjalankan aplikasi menggunakan teknologi container. Kontainer ini berfungsi seperti unit virtual yang memuat semua komponen yang dibutuhkan aplikasi, seperti kode, library, dan dependensi, sehingga aplikasi dapat berjalan secara konsisten di berbagai lingkungan.
 
 Fitur Utama Docker:
-Isolasi Aplikasi: Setiap kontainer terisolasi, memungkinkan banyak aplikasi berjalan di satu host tanpa saling mengganggu.
-Portabilitas: Aplikasi di dalam kontainer dapat dijalankan di berbagai sistem operasi tanpa perlu penyesuaian, baik di lingkungan pengembangan, staging, maupun produksi.
-Efisiensi: Kontainer lebih ringan dibandingkan virtual machine karena berbagi kernel dengan host dan hanya membawa komponen yang dibutuhkan aplikasi.
+1. Isolasi Aplikasi: Setiap kontainer terisolasi, memungkinkan banyak aplikasi berjalan di satu host tanpa saling mengganggu.
+2. Portabilitas: Aplikasi di dalam kontainer dapat dijalankan di berbagai sistem operasi tanpa perlu penyesuaian, baik di
+3. lingkungan pengembangan, staging, maupun produksi.
+4. Efisiensi: Kontainer lebih ringan dibandingkan virtual machine karena berbagi kernel dengan host dan hanya membawa komponen yang dibutuhkan aplikasi.
 
 Komponen Penting Docker:
 Docker Engine: Layanan inti Docker yang menjalankan dan mengelola kontainer.
