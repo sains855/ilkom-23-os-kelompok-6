@@ -6,6 +6,7 @@ Fitur Utama Docker:
 Isolasi Aplikasi: Setiap kontainer terisolasi, memungkinkan banyak aplikasi berjalan di satu host tanpa saling mengganggu.
 Portabilitas: Aplikasi di dalam kontainer dapat dijalankan di berbagai sistem operasi tanpa perlu penyesuaian, baik di lingkungan pengembangan, staging, maupun produksi.
 Efisiensi: Kontainer lebih ringan dibandingkan virtual machine karena berbagi kernel dengan host dan hanya membawa komponen yang dibutuhkan aplikasi.
+
 Komponen Penting Docker:
 Docker Engine: Layanan inti Docker yang menjalankan dan mengelola kontainer.
 Dockerfile: File konfigurasi yang mendefinisikan cara membangun image kontainer.
