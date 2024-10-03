@@ -1,5 +1,17 @@
 # ilkom-23-os-kelompok-6
-docker adalah sebuah sistem manajemen server berbasis CI/CD
+docker adalah sebuah sistem manajemen server berbasis CI/CD. 
+Docker adalah platform open-source yang memudahkan pengembangan, pengiriman, dan menjalankan aplikasi menggunakan teknologi container. Kontainer ini berfungsi seperti unit virtual yang memuat semua komponen yang dibutuhkan aplikasi, seperti kode, library, dan dependensi, sehingga aplikasi dapat berjalan secara konsisten di berbagai lingkungan.
+
+Fitur Utama Docker:
+Isolasi Aplikasi: Setiap kontainer terisolasi, memungkinkan banyak aplikasi berjalan di satu host tanpa saling mengganggu.
+Portabilitas: Aplikasi di dalam kontainer dapat dijalankan di berbagai sistem operasi tanpa perlu penyesuaian, baik di lingkungan pengembangan, staging, maupun produksi.
+Efisiensi: Kontainer lebih ringan dibandingkan virtual machine karena berbagi kernel dengan host dan hanya membawa komponen yang dibutuhkan aplikasi.
+Komponen Penting Docker:
+Docker Engine: Layanan inti Docker yang menjalankan dan mengelola kontainer.
+Dockerfile: File konfigurasi yang mendefinisikan cara membangun image kontainer.
+Image: Template read-only yang berisi semua elemen untuk membuat kontainer.
+Container: Instansi dari image yang menjalankan aplikasi.
+Docker Hub: Repositori untuk menyimpan dan berbagi image.
 
 Kelebihan Docker:
 1. Docker memberikan tingkat isolasi yang tinggi antara sistem host dan aplikasi yang terkontainerisasi, memastikan bahwa masalah atau kerentanan tertentu terdapat di dalam kontainer.
