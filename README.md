@@ -21,6 +21,7 @@ Kelebihan Docker:
 4. Docker dapat dijalankan di berbagai platform cloud, memberikan fleksibilitas dalam porting aplikasi.
 
    Docker memiliki banyak keunggulan, namun juga memiliki beberapa kekurangan yang perlu diperhatikan, terutama ketika digunakan dalam skala besar atau dalam konteks tertentu.
+   
 Kekurangan Docker:
 1. Overhead Sistem
 Docker menambah overhead pada sistem, terutama jika dibandingkan dengan menjalankan aplikasi langsung di sistem host. Meskipun lebih ringan dari virtual machine, Docker tetap memerlukan tambahan resource seperti CPU dan memori.
