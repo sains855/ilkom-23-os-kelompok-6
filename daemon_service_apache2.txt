@@ -1,0 +1,193 @@
+# Memulai layanan Apache
+yayan@dikay:/etc/systemd/system$ sudo systemctl start apache2
+
+# Mengecek status layanan Apache
+yayan@dikay:/etc/systemd/system$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset:>
+     Active: active (running) since Thu 2024-10-10 21:21:20 WITA; 5s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 6554 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SU>
+   Main PID: 6557 (apache2)
+      Tasks: 55 (limit: 9288)
+     Memory: 5.6M (peak: 6.3M)
+        CPU: 60ms
+     CGroup: /system.slice/apache2.service
+             ├─6557 /usr/sbin/apache2 -k start
+             ├─6559 /usr/sbin/apache2 -k start
+             └─6560 /usr/sbin/apache2 -k start
+
+Oct 10 21:21:20 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:21:20 dikay apachectl[6556]: AH00558: apache2: Could not reliably det>
+Oct 10 21:21:20 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+
+# Menghentikan layanan Apache
+yayan@dikay:/etc/systemd/system$ sudo systemctl stop apache2
+
+# Mengecek status layanan Apache setelah dihentikan
+yayan@dikay:/etc/systemd/system$ sudo systemctl status apache2
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset:>
+     Active: inactive (dead)
+       Docs: https://httpd.apache.org/docs/2.4/
+
+Oct 10 21:19:41 dikay apachectl[6482]: AH00558: apache2: Could not reliably det>
+Oct 10 21:19:41 dikay systemd[1]: apache2.service: Deactivated successfully.
+Oct 10 21:19:41 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+Oct 10 21:21:20 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:21:20 dikay apachectl[6556]: AH00558: apache2: Could not reliably det>
+Oct 10 21:21:20 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+Oct 10 21:21:44 dikay systemd[1]: Stopping apache2.service - The Apache HTTP Se>
+Oct 10 21:21:44 dikay apachectl[6638]: AH00558: apache2: Could not reliably det>
+Oct 10 21:21:44 dikay systemd[1]: apache2.service: Deactivated successfully.
+Oct 10 21:21:44 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+...skipping...
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset:>
+     Active: inactive (dead)
+       Docs: https://httpd.apache.org/docs/2.4/
+
+Oct 10 21:19:41 dikay apachectl[6482]: AH00558: apache2: Could not reliably det>
+Oct 10 21:19:41 dikay systemd[1]: apache2.service: Deactivated successfully.
+Oct 10 21:19:41 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+Oct 10 21:21:20 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:21:20 dikay apachectl[6556]: AH00558: apache2: Could not reliably det>
+Oct 10 21:21:20 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+Oct 10 21:21:44 dikay systemd[1]: Stopping apache2.service - The Apache HTTP Se>
+Oct 10 21:21:44 dikay apachectl[6638]: AH00558: apache2: Could not reliably det>
+Oct 10 21:21:44 dikay systemd[1]: apache2.service: Deactivated successfully.
+Oct 10 21:21:44 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+~
+~
+~
+~
+~
+~s
+~
+~
+
+# Memulai ulang (restart) layanan Apache
+yayan@dikay:/etc/systemd/system$ sudo systemctl restart apache2
+
+# Mengecek status layanan Apache setelah restart
+yayan@dikay:/etc/systemd/system$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset:>
+     Active: active (running) since Thu 2024-10-10 21:22:00 WITA; 2s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 6651 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SU>
+   Main PID: 6654 (apache2)
+      Tasks: 55 (limit: 9288)
+     Memory: 5.6M (peak: 6.2M)
+        CPU: 37ms
+     CGroup: /system.slice/apache2.service
+             ├─6654 /usr/sbin/apache2 -k start
+             ├─6656 /usr/sbin/apache2 -k start
+             └─6657 /usr/sbin/apache2 -k start
+
+Oct 10 21:22:00 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:22:00 dikay apachectl[6653]: AH00558: apache2: Could not reliably det>
+Oct 10 21:22:00 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+
+
+# Mengaktifkan layanan Apache agar berjalan otomatis saat sistem boot
+yayan@dikay:/etc/systemd/system$ sudo systemctl enable apache2
+Synchronizing state of apache2.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable apache2
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /usr/lib/systemd/system/apache2.service.
+
+# Mengecek status layanan Apache setelah diaktifkan
+yayan@dikay:/etc/systemd/system$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: >
+     Active: active (running) since Thu 2024-10-10 21:22:00 WITA; 21s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 6654 (apache2)
+      Tasks: 55 (limit: 9288)
+     Memory: 5.6M (peak: 6.2M)
+        CPU: 38ms
+     CGroup: /system.slice/apache2.service
+             ├─6654 /usr/sbin/apache2 -k start
+             ├─6656 /usr/sbin/apache2 -k start
+             └─6657 /usr/sbin/apache2 -k start
+
+Oct 10 21:22:00 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:22:00 dikay apachectl[6653]: AH00558: apache2: Could not reliably det>
+Oct 10 21:22:00 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+...skipping...
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: >
+     Active: active (running) since Thu 2024-10-10 21:22:00 WITA; 21s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 6654 (apache2)
+      Tasks: 55 (limit: 9288)
+     Memory: 5.6M (peak: 6.2M)
+        CPU: 38ms
+     CGroup: /system.slice/apache2.service
+             ├─6654 /usr/sbin/apache2 -k start
+             ├─6656 /usr/sbin/apache2 -k start
+             └─6657 /usr/sbin/apache2 -k start
+
+Oct 10 21:22:00 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:22:00 dikay apachectl[6653]: AH00558: apache2: Could not reliably det>
+Oct 10 21:22:00 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+~
+~
+~
+~
+~
+~
+~
+
+
+# Menonaktifkan layanan Apache agar tidak berjalan otomatis saat sistem boot
+yayan@dikay:/etc/systemd/system$ sudo systemctl disable apache2
+Synchronizing state of apache2.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable apache2
+Removed "/etc/systemd/system/multi-user.target.wants/apache2.service".
+
+# Mengecek status layanan Apache setelah dinonaktifkan
+yayan@dikay:/etc/systemd/system$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset:>
+     Active: active (running) since Thu 2024-10-10 21:22:00 WITA; 39s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 6654 (apache2)
+      Tasks: 55 (limit: 9288)
+     Memory: 5.6M (peak: 6.2M)
+        CPU: 39ms
+     CGroup: /system.slice/apache2.service
+             ├─6654 /usr/sbin/apache2 -k start
+             ├─6656 /usr/sbin/apache2 -k start
+             └─6657 /usr/sbin/apache2 -k start
+
+Oct 10 21:22:00 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Oct 10 21:22:00 dikay apachectl[6653]: AH00558: apache2: Could not reliably det>
+Oct 10 21:22:00 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+
+# Menampilkan log dari layanan Apache
+yayan@dikay:/etc/systemd/system$ sudo journalctl -u apache2
+Sep 27 07:17:24 dikay systemd[1]: Stopping apache2.service - The Apache HTTP Se>
+Sep 27 07:17:25 dikay apachectl[9969]: [Fri Sep 27 07:17:25.015739 2024] [alias>
+Sep 27 07:17:25 dikay apachectl[9969]: AH00558: apache2: Could not reliably det>
+Sep 27 07:17:25 dikay systemd[1]: apache2.service: Deactivated successfully.
+Sep 27 07:17:25 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+-- Boot 0d30f547eab54d51a8596972db41c8e5 --
+Sep 27 10:38:36 dikay systemd[1]: Stopping apache2.service - The Apache HTTP Se>
+Sep 27 10:38:36 dikay apachectl[4100]: [Fri Sep 27 10:38:36.721363 2024] [alias>
+Sep 27 10:38:36 dikay apachectl[4100]: AH00558: apache2: Could not reliably det>
+Sep 27 10:38:36 dikay systemd[1]: apache2.service: Deactivated successfully.
+Sep 27 10:38:36 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+-- Boot 057a73ec84db46439d00b123dc2724c0 --
+Sep 27 10:38:40 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+Sep 27 10:38:41 dikay apachectl[994]: [Fri Sep 27 10:38:41.076792 2024] [alias:>
+Sep 27 10:38:41 dikay apachectl[994]: AH00558: apache2: Could not reliably dete>
+Sep 27 10:38:41 dikay systemd[1]: Started apache2.service - The Apache HTTP Ser>
+Sep 27 12:58:26 dikay systemd[1]: Stopping apache2.service - The Apache HTTP Se>
+Sep 27 12:58:26 dikay apachectl[7126]: [Fri Sep 27 12:58:26.878818 2024] [alias>
+Sep 27 12:58:26 dikay apachectl[7126]: AH00558: apache2: Could not reliably det>
+Sep 27 12:58:26 dikay systemd[1]: apache2.service: Deactivated successfully.
+Sep 27 12:58:26 dikay systemd[1]: Stopped apache2.service - The Apache HTTP Ser>
+-- Boot d88d404af3434084a83a45d09993d31b --
+Sep 27 12:58:31 dikay systemd[1]: Starting apache2.service - The Apache HTTP Se>
+lines 1-23
