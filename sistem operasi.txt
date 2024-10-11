@@ -1,0 +1,16 @@
+
+
+1. **Proses**: 
+   - Proses adalah instansi dari program yang sedang dieksekusi. Setiap proses memiliki ruang memori sendiri, termasuk kode, data, dan tumpukan. Proses juga memiliki status dan informasi tentang penggunaannya.
+
+2. **Thread**:
+   - Thread adalah unit terkecil dari pemrosesan yang dapat dijadwalkan. Thread berada dalam konteks proses dan berbagi ruang memori dengan thread lain dalam proses yang sama. Ini memungkinkan komunikasi yang lebih cepat dan efisien antara thread.
+
+### Perbedaan Utama:
+- **Isolasi**: Proses terisolasi satu sama lain, sementara thread dalam proses yang sama dapat berbagi data.
+- **Overhead**: Membuat dan mengelola thread biasanya lebih ringan dibandingkan dengan proses karena berbagi sumber daya.
+
+### Contoh Penggunaan:
+- **Proses**: Jika kamu membuka beberapa aplikasi di komputer, masing-masing aplikasi tersebut berjalan sebagai proses terpisah.
+- **Thread**: Dalam aplikasi yang memerlukan pemrosesan simultan (seperti aplikasi web), dapat digunakan beberapa thread untuk menangani permintaan pengguna secara bersamaan.
+
