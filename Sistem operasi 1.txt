@@ -1,0 +1,23 @@
+Sistem Operasi (Operating System atau OS) adalah perangkat lunak yang mengelola perangkat keras komputer dan menyediakan layanan dasar untuk menjalankan berbagai aplikasi. OS bertindak sebagai perantara antara pengguna dan perangkat keras komputer, memungkinkan perangkat lunak aplikasi untuk berfungsi secara efektif dan efisien.
+
+Berikut adalah beberapa fungsi utama dari sistem operasi:
+
+1. **Manajemen Proses**: OS mengatur jalannya berbagai proses dalam komputer, termasuk menjalankan, menjeda, atau menghentikan program. OS memastikan bahwa setiap proses mendapat waktu pemrosesan yang cukup dari CPU dan mengelola penggunaan memori.
+
+2. **Manajemen Memori**: Sistem operasi mengatur alokasi dan penggunaan memori di komputer. OS menjaga agar setiap aplikasi mendapatkan cukup memori untuk berjalan dan mencegah terjadinya bentrok atau konflik antara aplikasi yang satu dengan yang lain.
+
+3. **Manajemen File**: OS memungkinkan pengguna untuk membuat, menghapus, memindahkan, atau menyalin file. Sistem file OS menyusun data dalam bentuk folder dan direktori sehingga memudahkan pengguna untuk mengakses informasi.
+
+4. **Manajemen Perangkat Input/Output (I/O)**: OS menangani komunikasi antara komputer dan perangkat periferal seperti keyboard, mouse, printer, dan disk drive. OS menyediakan antarmuka standar untuk perangkat-perangkat ini.
+
+5. **Keamanan dan Proteksi**: OS membantu melindungi data dan informasi dengan menyediakan fitur keamanan, seperti manajemen pengguna, kata sandi, dan kontrol akses.
+
+6. **Antarmuka Pengguna (User Interface)**: Sistem operasi menyediakan antarmuka bagi pengguna untuk berinteraksi dengan komputer, baik melalui antarmuka berbasis teks (Command-Line Interface/CLI) maupun antarmuka berbasis grafis (Graphical User Interface/GUI).
+
+Beberapa contoh sistem operasi yang populer adalah:
+- **Windows**: Dikembangkan oleh Microsoft, banyak digunakan di komputer pribadi.
+- **macOS**: Dikembangkan oleh Apple, digunakan pada perangkat komputer Mac.
+- **Linux**: Sistem operasi open-source yang digunakan secara luas di server dan sebagai basis untuk beberapa distribusi seperti Ubuntu dan Fedora.
+- **Android** dan **iOS**: Digunakan di perangkat mobile seperti smartphone dan tablet.
+
+Sistem operasi merupakan komponen penting yang memungkinkan perangkat komputer berfungsi dengan baik dan menjalankan berbagai aplikasi yang digunakan sehari-hari.
