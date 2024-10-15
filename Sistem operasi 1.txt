@@ -4,7 +4,7 @@ Berikut adalah beberapa fungsi utama dari sistem operasi:
 
 1. **Manajemen Proses**: OS mengatur jalannya berbagai proses dalam komputer, termasuk menjalankan, menjeda, atau menghentikan program. OS memastikan bahwa setiap proses mendapat waktu pemrosesan yang cukup dari CPU dan mengelola penggunaan memori.
 
-2. **Manajemen Memori**: Sistem operasi mengatur alokasi dan penggunaan memori di komputer. OS menjaga agar setiap aplikasi mendapatkan cukup memori untuk berjalan dan mencegah terjadinya bentrok atau konflik antara aplikasi yang satu dengan yang lain.
+2. **Manajemen Memori: Sistem operasi mengatur alokasi dan penggunaan memori di komputer. OS menjaga agar setiap aplikasi mendapatkan cukup memori untuk berjalan dan mencegah terjadinya bentrok atau konflik antara aplikasi yang satu dengan yang lain.
 
 3. **Manajemen File**: OS memungkinkan pengguna untuk membuat, menghapus, memindahkan, atau menyalin file. Sistem file OS menyusun data dalam bentuk folder dan direktori sehingga memudahkan pengguna untuk mengakses informasi.
 
