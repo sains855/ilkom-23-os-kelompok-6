@@ -13,7 +13,7 @@
  
  cd /home/yaya/laravel-server
 
- php -S localhost:8000
+ php -S localhost:8001
  ```
 
  ### Langkah Kedua
