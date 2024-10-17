@@ -92,4 +92,10 @@ Setelah server berjalan, buka browser dan masukkan URL:
 http://localhost:8000
 ```
 ### 5. Screenshot
-![Screenshot](../images/Ryian.png)
+Tampilan Proses Menjalankan Script
+![Deskripsi Gambar](https://drive.google.com/uc?id=1G17_x7RfbOkECpMGOhNZCbFBnPWi1ZVb)
+
+
+Tampilan Web
+![Deskripsi Gambar](https://drive.google.com/uc?id=1OC6MdVJ3zYRYCDJwnhL1ci4bXUnGv8Cn)
+
