@@ -95,7 +95,7 @@ http://localhost:8000
 ```
 ### 5. Screenshot
 Tampilan Proses Menjalankan Script
-![Deskripsi Gambar](https://drive.google.com/file/d/1-UBGLEnwb5bMErcI2hS1qcxSnuKnMo_B/view?usp=drivesdk)
+![Deskripsi Gambar](https://drive.google.com/file/d/1-UBGLEnwb5bMErcI2hS1qcxSnuKnMo_B/view?usp=sharing)
 
 Tampilan Web
-![Deskripsi Gambar](https://drive.google.com/file/d/1-WNurD9OZf2wbtYvcvwTAWjtu7sxAcOD/view?usp=drivesdk)
+![Deskripsi Gambar](https://drive.google.com/file/d/1-WNurD9OZf2wbtYvcvwTAWjtu7sxAcOD/view?usp=sharing)
