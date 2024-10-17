@@ -95,7 +95,9 @@ http://localhost:8000
 ```
 ### 5. Screenshot
 Tampilan Proses Menjalankan Script
-![Deskripsi Gambar](https://drive.google.com/file/d/1-UBGLEnwb5bMErcI2hS1qcxSnuKnMo_B/view?usp=sharing)
+berikut ini contoh tampilan script untuk daemon di bash
+![Deskripsi Gambar](https://drive.google.com/uc?id=1-UBGLEnwb5bMErcI2hS1qcxSnuKnMo_B)
 
 Tampilan Web
-![Deskripsi Gambar](https://drive.google.com/file/d/1-WNurD9OZf2wbtYvcvwTAWjtu7sxAcOD/view?usp=sharing)
+berikut ini contoh tampilan web yang di hasilkan
+![Deskripsi Gambar](https://drive.google.com/uc?id=1-WNurD9OZf2wbtYvcvwTAWjtu7sxAcOD)
