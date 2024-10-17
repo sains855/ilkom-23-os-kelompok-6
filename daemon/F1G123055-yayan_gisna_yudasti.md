@@ -64,6 +64,10 @@
  sudo systemctl enable laravel
  sudo systemctl status laravel
  ```
+ menunjukan status **laravel.service** aktif 
+ ![image](https://github.com/user-attachments/assets/0060fc46-9310-4668-b034-fd75f4622bfb)
+
+
  ### Langkah Kelima
  Menginstall laravel ke dalam folder **/home/yaya/laravel-server** dengan perintah
  ```
