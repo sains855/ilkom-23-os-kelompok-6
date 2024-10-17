@@ -50,3 +50,6 @@
  sudo systemctl enable laravel
  sudo systemctl status laravel
  ```
+ ### Screenshot
+ ![screen laravel](https://github.com/user-attachments/assets/52f85ed0-3a24-421e-9c49-9d45aff1ecd6)
+
