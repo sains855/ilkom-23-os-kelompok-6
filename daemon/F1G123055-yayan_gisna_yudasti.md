@@ -21,6 +21,11 @@
  ```
  chmod +x /home/yaya/laravel-serve/laravel-server.sh
  ```
+ or
+ ```
+ chmod -R 777 /home/yaya/laravel-server
+ ```
+ Memberikan hak akses langsung ke foldernya
  ### Langkah Ketiga
  Membuat skrip laravel.service pada folder **/etc/systemd/system** dengan perintah terminal
  ```
