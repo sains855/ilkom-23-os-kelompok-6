@@ -37,10 +37,6 @@ $ sudo systemctl status ryian.service
 ```
 
 ### 4. Screenshot
-Tampilan Proses Menjalankan Script Yang Sudah Berjalan
-![Deskripsi Gambar](https://drive.google.com/file/d/19EPyI0yE8Hzc9Ww7ju8_NSW9ZxXhEKQE/view?usp=drive_link)
+![Tampilan Proses Menjalankan Script](https://drive.google.com/file/d/19EPyI0yE8Hzc9Ww7ju8_NSW9ZxXhEKQE/view?usp=drive_link)
 
-
-Tampilan Web
-![Deskripsi Gambar](https://drive.google.com/file/d/1CN0ws147vVozS94QqxKa_SE25iVSIicd/view?usp=drive_link)
-
+![Tampilan Web](https://drive.google.com/file/d/1CN0ws147vVozS94QqxKa_SE25iVSIicd/view?usp=drive_link)
