@@ -11,7 +11,7 @@ masukan skrip di bawah ini:
 ```
  #!/bin/bash
  
- cd /home/yaya/laravel-server
+ cd /home/wraningsih/laravel-server
 
  php -S localhost:8001
  ```
@@ -20,7 +20,7 @@ masukan skrip di bawah ini:
  Melakukan pemberian hak akses pada file **laravel-server.sh**
 
  ```
- chmod -R 777 /home/yaya/laravel-server
+ chmod -R 777 /home/wraningsih/laravel-server
  ```
 
 untuk memberikan hak akses folder secara langsung
