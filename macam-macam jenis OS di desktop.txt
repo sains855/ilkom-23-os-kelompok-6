@@ -1,0 +1,24 @@
+Sistem operasi (OS) adalah perangkat lunak yang mengatur perangkat keras dan perangkat lunak pada komputer. Berikut adalah beberapa jenis sistem operasi beserta pengertiannya:
+
+Sistem Operasi Desktop:
+
+Windows: Sistem operasi yang paling umum digunakan di desktop dan laptop, dikembangkan oleh Microsoft. Memiliki antarmuka grafis yang user-friendly.
+macOS: Sistem operasi yang dikembangkan oleh Apple untuk komputer Mac. Dikenal dengan desain antarmukanya yang elegan dan integrasi yang baik dengan perangkat Apple lainnya.
+Linux: Sistem operasi open-source yang tersedia dalam berbagai distribusi (distro) seperti Ubuntu, Fedora, dan Debian. Dikenal karena stabilitas dan keamanan.
+Sistem Operasi Mobile:
+
+Android: Sistem operasi berbasis Linux yang dikembangkan oleh Google, digunakan di berbagai perangkat mobile seperti smartphone dan tablet.
+iOS: Sistem operasi yang dikembangkan oleh Apple untuk perangkat mobile seperti iPhone dan iPad. Memiliki ekosistem aplikasi yang kaya.
+Sistem Operasi Server:
+
+Windows Server: Versi sistem operasi Windows yang dirancang khusus untuk server, menawarkan fitur manajemen jaringan dan keamanan yang lebih baik.
+Linux Server: Banyak distro Linux yang digunakan sebagai sistem operasi server, seperti CentOS dan Ubuntu Server, dikenal karena kinerjanya yang baik dan biaya yang rendah.
+Sistem Operasi Real-Time (RTOS):
+
+Sistem operasi yang dirancang untuk aplikasi yang memerlukan waktu respons cepat dan deterministik, seperti pada sistem embedded dan otomasi industri.
+Sistem Operasi Multi-user:
+
+Sistem operasi yang memungkinkan beberapa pengguna untuk menggunakan komputer secara bersamaan, seperti Unix dan Linux.
+Sistem Operasi Tertanam (Embedded OS):
+
+Sistem operasi yang dirancang untuk perangkat yang tidak memerlukan antarmuka pengguna yang kompleks, seperti dalam perangkat elektronik konsumen, otomotif, dan perangkat IoT.
