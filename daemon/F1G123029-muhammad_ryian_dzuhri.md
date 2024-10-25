@@ -38,9 +38,11 @@ $ sudo systemctl status ryian.service
 
 ### 4. Screenshot
 Tampilan Proses Menjalankan Script
-![Deskripsi Gambar](https://drive.google.com/uc?export=view&id=1CN0ws147vVozS94QqxKa_SE25iVSIicd)
 
-Tampilan Web
 ![Deskripsi Gambar](https://drive.google.com/uc?export=view&id=19EPyI0yE8Hzc9Ww7ju8_NSW9ZxXhEKQE)
 
 
+
+Tampilan Web
+
+![Deskripsi Gambar](https://drive.google.com/uc?export=view&id=1CN0ws147vVozS94QqxKa_SE25iVSIicd)
