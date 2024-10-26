@@ -134,7 +134,7 @@ exit 0
 ```bash
 $ sudo chmod +x monitoring_daemon.sh
 ```
-## 4. Isi file.service (iam.service) dengan konfigurasi berikut
+## 4. Isi file.service (cyber.service) dengan konfigurasi berikut
 ```bash
 [Unit]
 Description=System uji Daemon
@@ -168,7 +168,7 @@ sudo systemctl start cyber.service
 #cek status 
 sudo sytemctl status cyber.service
 ```
-## 7. Mlihat log service
+## 7. Melihat log service
 ```bash
 $ sudo journal -u cyber.service
 ```
