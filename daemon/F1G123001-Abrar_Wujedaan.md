@@ -17,9 +17,9 @@ sudo nano uji_daemon.sh
 #!/bin/bash
 
 # Variabel
-WORK_DIR="/opt/monitoring_daemon"
-LOG_FILE="$WORK_DIR/monitoring.log"
-PID_FILE="/var/run/monitoring_daemon.pid"
+WORK_DIR="/opt/uji_daemon"
+LOG_FILE="$WORK_DIR/uji.log"
+PID_FILE="/var/run/uji_daemon.pid"
 
 # Fungsi untuk mencatat log
 log_message() {
