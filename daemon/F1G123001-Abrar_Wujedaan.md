@@ -5,21 +5,28 @@ dalam hal ini saya akan memaparkan tahapan pembuatan daemon process
 ## 1. Buat directori untuk script
 masuk sebagai superuser, lalu jalankan perintah
 ```bash
-$ sudo mkdir -p /opt/uji_daemon
+sudo mkdir -p /opt/uji_daemon
 cd /opt/uji_daemon
 
 #Buat script daemon
 sudo nano uji_daemon.sh
 ```
 
-## 2. masukan file script kedalam  monitoring_daemon.sh
+## 2. masukan file script kedalam  uji_daemon.sh
 ```bash
-# Fungsi logging
+#!/bin/bash
+
+# Variabel
+WORK_DIR="/opt/monitoring_daemon"
+LOG_FILE="$WORK_DIR/monitoring.log"
+PID_FILE="/var/run/monitoring_daemon.pid"
+
+# Fungsi untuk mencatat log
 log_message() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
 }
 
-# Fungsi untuk mengecek apakah proses sudah berjalan
+# Mengecek apakah daemon sudah berjalan
 check_process() {
     if [ -f "$PID_FILE" ]; then
         pid=$(cat "$PID_FILE")
@@ -30,53 +37,41 @@ check_process() {
     return 1
 }
 
-# Fungsi untuk memonitor sistem
+# Fungsi monitoring
 monitor_system() {
     while true; do
-        # CPU Usage
         cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}')
-        log_message "CPU Usage: $cpu_usage%"
-
-        # Memory Usage
         memory_usage=$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2}')
-        log_message "Memory Usage: $memory_usage"
-
-        # Disk Usage
         disk_usage=$(df -h / | awk 'NR==2{print $5}')
-        log_message "Disk Usage: $disk_usage"
-
-        # Process Count
         process_count=$(ps aux | wc -l)
+
+        log_message "CPU Usage: $cpu_usage%"
+        log_message "Memory Usage: $memory_usage"
+        log_message "Disk Usage: $disk_usage"
         log_message "Total Processes: $process_count"
 
-        sleep 300  # Monitor setiap 5 menit
+        sleep 300  # Interval 5 menit
     done
 }
 
-# Fungsi start daemon
+# Fungsi untuk memulai daemon
 start_daemon() {
     if check_process; then
         echo "Daemon sudah berjalan dengan PID: $(cat $PID_FILE)"
         exit 1
     fi
 
-    # Buat direktori kerja jika belum ada
     mkdir -p "$WORK_DIR"
-    
-    # Buat file log jika belum ada
     touch "$LOG_FILE"
-    
-    # Start monitoring dalam background
+
     monitor_system &
-    
-    # Simpan PID
     echo $! > "$PID_FILE"
-    
+
     log_message "Daemon started with PID: $!"
     echo "Daemon started. PID: $!"
 }
 
-# Fungsi stop daemon
+# Fungsi untuk menghentikan daemon
 stop_daemon() {
     if ! check_process; then
         echo "Daemon tidak berjalan"
@@ -90,14 +85,14 @@ stop_daemon() {
     echo "Daemon stopped"
 }
 
-# Fungsi restart daemon
+# Fungsi untuk me-restart daemon
 restart_daemon() {
     stop_daemon
     sleep 2
     start_daemon
 }
 
-# Fungsi status daemon
+# Fungsi untuk status daemon
 status_daemon() {
     if check_process; then
         echo "Daemon berjalan dengan PID: $(cat $PID_FILE)"
@@ -108,24 +103,13 @@ status_daemon() {
     fi
 }
 
-# Parse argumen command line
+# Menjalankan perintah berdasarkan argumen
 case "$1" in
-    start)
-        start_daemon
-        ;;
-    stop)
-        stop_daemon
-        ;;
-    restart)
-        restart_daemon
-        ;;
-    status)
-        status_daemon
-        ;;
-    *)
-        echo "Penggunaan: $0 {start|stop|restart|status}"
-        exit 1
-        ;;
+    start) start_daemon ;;
+    stop) stop_daemon ;;
+    restart) restart_daemon ;;
+    status) status_daemon ;;
+    *) echo "Usage: $0 {start|stop|restart|status}"; exit 1 ;;
 esac
 
 exit 0
@@ -134,6 +118,11 @@ exit 0
 ```bash
 $ sudo chmod +x monitoring_daemon.sh
 ```
+## 5. Buat File Service di Systemd
+```bash
+sudo nano /etc/systemd/system/cyber.service
+```
+
 ## 4. Isi file.service (cyber.service) dengan konfigurasi berikut
 ```bash
 [Unit]
@@ -152,12 +141,12 @@ WantedBy=multi-user.target
 ```
 ## 5. Berikan permission
 ```bash
-$ sudo chmod 644 /etc/systemd/system/cyber.service
+sudo chmod 644 /etc/systemd/system/cyber.service
 ```
 ## 6. Menjalankan file Service
 ```bash
 #reload daemon
-$ sudo systemctl daemon-reload
+sudo systemctl daemon-reload
 
 # Enable service agar start saat boot
 sudo systemctl enable cyber.service
