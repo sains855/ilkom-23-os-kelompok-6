@@ -118,12 +118,12 @@ exit 0
 ```bash
 $ sudo chmod +x monitoring_daemon.sh
 ```
-## 5. Buat File Service di Systemd
+## 4. Buat File Service di Systemd
 ```bash
 sudo nano /etc/systemd/system/cyber.service
 ```
 
-## 4. Isi file.service (cyber.service) dengan konfigurasi berikut
+## 5. Isi file.service (cyber.service) dengan konfigurasi berikut
 ```bash
 [Unit]
 Description=System uji Daemon
@@ -139,11 +139,11 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
-## 5. Berikan permission
+## 6. Berikan permission
 ```bash
 sudo chmod 644 /etc/systemd/system/cyber.service
 ```
-## 6. Menjalankan file Service
+## 7. Menjalankan file Service
 ```bash
 #reload daemon
 sudo systemctl daemon-reload
@@ -157,12 +157,12 @@ sudo systemctl start cyber.service
 #cek status 
 sudo sytemctl status cyber.service
 ```
-## 7. Melihat log service
+## 8. Melihat log service
 ```bash
 $ sudo journal -u cyber.service
 ```
 
-## 8. Memberhentikan server
+## 9. Memberhentikan server
 ```bash
 sudo systemctl start cyber.service
 ```
