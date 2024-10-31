@@ -34,7 +34,7 @@ $ sudo systemctl status musar.service
 ```
 
 ## Bukti daemon telah berjalan
-![Bukti daemon](https://drive.google.com/uc?export=download&id=16gnM7fVXVVnJ9P9zSH0chIcOniVP5ytJ)
+![Bukti daemon](https://drive.google.com/uc?export=download&id=1SdEr7ZLIgYVQQLvAqRiSYESsKIss89jx)
 
 Tampilan web:
-![Bukti tampilan web](https://drive.google.com/uc?export=download&id=1SdEr7ZLIgYVQQLvAqRiSYESsKIss89jx)
+![Bukti tampilan web](https://drive.google.com/uc?export=download&id=16gnM7fVXVVnJ9P9zSH0chIcOniVP5ytJ)
