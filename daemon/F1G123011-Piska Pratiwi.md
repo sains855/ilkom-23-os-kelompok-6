@@ -3,17 +3,23 @@ Didalam panduan ini terdapat penjelasan mengenai langkah-langkah serve laravel
 ## langkah-langkah membuat serve laravel
 ### langkah pertama 
 membuat skrip laravel_server pada folder **/home/piska/laravel_server** dengan melalui perintah terminal 
+
 '''
+
 nano /home/piska/laravel-serve/laravel_server.php
 
 memasukkan skrip dibawah ini:
+
 '''
+
 #!/bin/bash
 
 cd /home/piska/laravel_server
 
 php -S localhost:8001
+
 '''
+
 # langkah kedua
 Melakukan pemberian hak akses pada file **laravel_server.php**
 
@@ -22,40 +28,53 @@ Melakukan pemberian hak akses pada file **laravel_server.php**
 'chmod -R 777 /home/piska/laravel-server'
 
 '''
+
 kemudian untuk memberikan hak akses folder secara langsung
 
 # langkah ketiga
 membuat service systemd yang menjelankan skrip laravel serve
+
 '''
-'sudo nano /etc/systemd/system/laravel.service'
+
+sudo nano /etc/systemd/system/laravel.service
+
 '''
+
 memasukkan skrip dibawah ini:
+
 '''
-'[unit]'
 
-'Description=Laravel Development Server'
+[unit]
 
-'[Service]'
+Description=Laravel Development Server
 
-'ExecStart=/home/piska/laravel-serve/laravel_server.php'
+[Service]
 
-'Restart=always'
+ExecStart=/home/piska/laravel-serve/laravel_server.php
 
-'[Install]'
+Restart=always
 
-'WantedBy=multi-user.target'
+[Install]
+
+WantedBy=multi-user.target
+
 '''
+
 # langkah keempat
 reload systemd untuk mengaktifkan laravel.service
+
 '''
-'sudo systemctl daemon-reload'
 
-'sudo systemctl start laravel'
+sudo systemctl daemon-reload
 
-'sudo systemctl enable laravel'
+sudo systemctl start laravel
 
-'sudo sytemctl status laravel'
+sudo systemctl enable laravel
+
+sudo sytemctl status laravel
+
 '''
+
 menunjukkan status **laravel.service** aktif
 ![Screenshot 2024-10-23 153104](https://github.com/user-attachments/assets/6716d699-7aba-4719-b3ce-94d5c03d939d)
 
