@@ -69,8 +69,9 @@ menunjukkan status **laravel.service** aktif
 
 # langkah kelima
 menginstall laravel kedalam folder **/home/piska/laravel-server** dengan menggunakan perintah
-
+ ```
 composer create-project laravel/laravel:^10.0 sistem-operasi
+ ```
 # screenshoot 
 mengakses laravel dengan memasukkan arahan url localhost:8001/sistem-operasi/public/index.php karena kita akan megakses index.php
 ![Screenshot 2024-10-31 193045](https://github.com/user-attachments/assets/7a4ff0c3-b764-4ad5-af3e-5f6f3056637f)
