@@ -3,7 +3,9 @@ Didalam panduan ini terdapat penjelasan mengenai langkah-langkah serve laravel
 # langkah-langkah membuat serve laravel
 # langkah pertama 
 membuat skrip laravel_server pada folder */home/piska/laravel_server* dengan melalui perintah terminal 
+
 "nano /home/piska/laravel-serve/laravel_server.php"
+
 memasukkan skrip dibawah ini:
 "#!/bin/bash"
 "cd /home/piska/laravel_server"
@@ -11,6 +13,7 @@ memasukkan skrip dibawah ini:
 
 # langkah kedua
 Melakukan pemberian hak akses pada file laravel_server.php
+
 "chmod -R 777 /home/piska/laravel-server"
 kemudian untuk memberikan hak akses folder secara langsung
 
@@ -18,6 +21,7 @@ kemudian untuk memberikan hak akses folder secara langsung
 membuat service systemd yang menjelankan skrip laravel serve
 "sudo nano /etc/systemd/system/laravel.service"
 memasukkan skrip dibawah ini:
+
 "[unit]"
 "Description=Laravel Development Server"
 "[Service]"
