@@ -49,7 +49,7 @@
   
  [Service]
  
- ExecStart=/home/yaya/laravel-serve/laravel-server.sh
+ ExecStart=/home/yaya/laravel-server/laravel-server.sh
  Restart=always
   
  [Install]
