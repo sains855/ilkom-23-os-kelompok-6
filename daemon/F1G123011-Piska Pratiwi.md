@@ -1,5 +1,4 @@
 # DEMONSTRASI DAEMON PADA LARAVEL
-# DEMONSTRASI DAEMON PADA LARAVEL
 Didalam panduan ini terdapat penjelasan mengenai langkah-langkah serve laravel
 # langkah-langkah membuat serve laravel
 # langkah pertama 
