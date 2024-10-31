@@ -5,45 +5,37 @@ Didalam panduan ini terdapat penjelasan mengenai langkah-langkah serve laravel
 membuat skrip laravel_server pada folder **/home/piska/laravel_server** dengan melalui perintah terminal 
 
  ```
-
 nano /home/piska/laravel-serve/laravel_server.php
+ ```
 
 memasukkan skrip dibawah ini:
 
  ```
-
 #!/bin/bash
 
 cd /home/piska/laravel_server
 
 php -S localhost:8001
-
  ```
 
 # langkah kedua
 Melakukan pemberian hak akses pada file **laravel_server.php**
 
  ```
-
 chmod -R 777 /home/piska/laravel-server
-
  ```
-
-kemudian untuk memberikan hak akses folder secara langsung
+untuk memberikan hak akses folder secara langsung
 
 # langkah ketiga
 membuat service systemd yang menjelankan skrip laravel serve
 
  ```
-
 sudo nano /etc/systemd/system/laravel.service
-
  ```
 
 memasukkan skrip dibawah ini:
 
  ```
-
 [unit]
 
 Description=Laravel Development Server
@@ -57,14 +49,12 @@ Restart=always
 [Install]
 
 WantedBy=multi-user.target
-
  ```
 
 # langkah keempat
 reload systemd untuk mengaktifkan laravel.service
 
  ```
-
 sudo systemctl daemon-reload
 
 sudo systemctl start laravel
@@ -72,7 +62,6 @@ sudo systemctl start laravel
 sudo systemctl enable laravel
 
 sudo sytemctl status laravel
-
  ```
 
 menunjukkan status **laravel.service** aktif
