@@ -1,0 +1,17 @@
+Docker dan virtualisasi (misalnya, menggunakan VMware atau VirtualBox) keduanya adalah teknologi untuk menjalankan aplikasi dalam lingkungan yang terisolasi, tetapi ada perbedaan mendasar dalam cara mereka bekerja:
+
+1. Arsitektur dan Isolasi
+Virtualisasi: Virtualisasi membuat virtual machines (VM) yang menjalankan sistem operasi lengkap, termasuk kernel, di atas hypervisor. Setiap VM berfungsi layaknya komputer independen, sehingga membutuhkan lebih banyak sumber daya, termasuk memori dan CPU. Contoh: jika menjalankan tiga VM di satu mesin fisik, maka masing-masing VM memiliki OS dan kernel sendiri, sehingga lebih berat.
+Docker (Container): Docker menggunakan kernel dari OS host, sehingga hanya memerlukan container engine tanpa perlu memuat OS tambahan. Setiap container adalah lingkungan terisolasi yang lebih ringan, karena berbagi kernel dengan host dan memiliki lapisan yang minimal untuk menjalankan aplikasi.
+2. Penggunaan Sumber Daya
+Virtualisasi: Karena setiap VM memiliki OS lengkap, memori, dan CPU yang dialokasikan terpisah, VM cenderung lebih boros sumber daya.
+Docker: Docker lebih ringan karena tidak membutuhkan OS tambahan. Ia hanya membagi lapisan aplikasi dan dependensi, jadi container jauh lebih ringan dibanding VM dan bisa menjalankan banyak container di satu server dengan overhead yang minimal.
+3. Kecepatan Booting dan Efisiensi
+Virtualisasi: Booting VM mirip dengan menyalakan komputer baru, sehingga memerlukan waktu lebih lama untuk siap digunakan.
+Docker: Karena tidak memerlukan kernel terpisah, container Docker bisa dijalankan hampir seketika, yang membuatnya lebih efisien untuk tugas yang butuh fleksibilitas tinggi.
+4. Portabilitas dan Konsistensi
+Virtualisasi: VM lebih sulit dipindahkan antar lingkungan karena bergantung pada konfigurasi hypervisor dan OS.
+Docker: Docker memungkinkan aplikasi untuk berjalan konsisten di berbagai lingkungan. Karena aplikasi dan semua dependensi dikemas dalam container, container Docker dapat dipindahkan dari satu server ke server lain dengan mudah dan dijalankan di lingkungan yang berbeda tanpa masalah ketergantungan.
+5. Kegunaan dan Contoh Kasus
+Virtualisasi: Digunakan ketika diperlukan isolasi yang ketat atau menjalankan berbagai OS sekaligus pada satu mesin (misalnya, Linux dan Windows di server yang sama).
+Docker: Ideal untuk aplikasi yang butuh deployment cepat, microservices, atau continuous integration/continuous delivery (CI/CD).
