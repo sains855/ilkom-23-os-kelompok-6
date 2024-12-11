@@ -176,3 +176,5 @@ $ docker stop id-container
 ```bash
 $ docker run --memory=512m --memory-swap=1g id-image
 ```
+# BUKTI STATUS PEMBATASAN MEMORI
+![Gambar dari Google Drive](https://drive.google.com/uc?id=15umxrrN7PMx2QR5ffjb)
