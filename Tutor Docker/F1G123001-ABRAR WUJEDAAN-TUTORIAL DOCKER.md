@@ -171,3 +171,8 @@ http://localhost:8080
 ```bash
 $ docker stop id-container
 ```
+
+# MELAKUKAN PEMBATASAN MEMORI
+```bash
+$ docker run --memory=512m --memory-swap=1g id-image
+```
