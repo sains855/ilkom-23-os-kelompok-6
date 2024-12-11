@@ -40,7 +40,7 @@ $ touch html/index.php
 $ nano html/index.php
 ```
 
-# ISI FILE index.html:
+# ISI FILE index.php:
 ```bash
 <?php
 session_start();
