@@ -150,5 +150,16 @@ Jalankan aplikasi Laravel dalam container:
 docker-compose up -d
 ```
 
+Akses Aplikasi di Browser 
+
+http://127.0.0.1:8000/
+
+Menampilan Status Docker Telah Berjalan
+![image](https://github.com/user-attachments/assets/f9634440-069b-43aa-88eb-a75548963f25)
+
 Hasil akhir aplikasi berjalan di browser:
 ![image](https://github.com/user-attachments/assets/aacdb225-6ade-4567-9f1b-8f7e3133e4db)
+
+Melakukan Pembatasan Memory dan CPU
+
+```
