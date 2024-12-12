@@ -28,3 +28,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 ![Gambar dari Google Drive](https://drive.google.com/file/d/1ebIAxptbWTtUlw5-Fd8uLVQohD7zUQmg/view?usp=sharing)
 
+3.	Verifikasi bahwa instalasi berhasil dengan menjalankan image hello-world:
+```bash
+sudo docker run hello-world
+```
+![Gambar dari Google Drive](https://drive.google.com/file/d/1kAb-ItYE3hRSj_BfBlju-BYY71QElw3Y/view?usp=sharing)
