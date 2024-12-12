@@ -41,3 +41,8 @@ Berikut contoh gambarnya
    ### 4. Periksa Apakah Container Sudah Berjalan Pada Tab Container
 1. Jika sudah berjalan icon kolom action akan berbentuk kotak
    ![Gambar dari Google Drive](https://drive.google.com/uc?id=1HoSK3q1-PJIfawhGrFGs0nWGpAnnkPm_)
+
+   ### 5. Jika Sudah Berjalan Kunjungi Port Sesuai Dengan Container Yang Ada
+1. Jika website berhasil terbuka artinya container berjalan tanpa error.
+Output Web:
+   ![Gambar dari Google Drive](https://drive.google.com/uc?id=1je6n2V0eSlsqPRYPIrdC3zJ5FvbiArJE)
