@@ -211,3 +211,11 @@ $ docker exec -it <container_id> /bin/bash
 ```
 ## Bukti percobaan masuk ke container
 ![Gambar dari Google Drive](https://drive.google.com/uc?id=1J-rrirh8qHUhIdPJquC78tvwaGBt5P2w)
+
+## 5. Menambah CPU
+Untuk menambahkan jumlah CPU yang dialokasikan ke kontainer saat menjalankan dengan pengaturan tertentu.
+```bash
+$ docker run -d --name my-container --cpus="2.0" my-image
+```
+
+
