@@ -22,3 +22,6 @@ EXPOSE 80
 ```bash
 docker build -t nama-image .
 ```
+Berikut contoh gambarnya
+![Deskripsi Gambar](https://drive.google.com/uc?id=1hVu0TjS1xypN2BqXSjA8Ntk9ikpB2n2B)
+8. Image sudah terbuild, selanjutnya lanjut untuk menjalankan container dari image yang sudah ada dengan Docker Desktop
