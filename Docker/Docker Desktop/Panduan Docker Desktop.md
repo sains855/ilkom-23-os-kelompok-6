@@ -35,3 +35,5 @@ Berikut contoh gambarnya
    - **Container Name**: Masukkan nama untuk container.
    - **Ports**: Tentukan port yang akan digunakan, seperti `8080:80`.
    - **Optional Settings**: Atur opsi tambahan seperti volume atau environment variable jika diperlukan.
+   6. Klik **Run** untuk memulai container.
+   ![Gambar dari Google Drive](https://drive.google.com/uc?id=1HoSK3q1-PJIfawhGrFGs0nWGpAnnkPm_)
