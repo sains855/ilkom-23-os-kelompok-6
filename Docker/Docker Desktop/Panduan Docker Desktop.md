@@ -30,3 +30,8 @@ Berikut contoh gambarnya
 1. Buka **Docker Desktop** dan masuk ke tab **Images**.
 2. Pastikan image yang akan digunakan sudah tersedia.
 3. Cari image yang ingin dijalankan pada daftar yang tersedia.
+4. Klik tombol **Run** pada image tersebut.
+5. Konfigurasikan pengaturan berikut di dialog yang muncul:
+   - **Container Name**: Masukkan nama untuk container.
+   - **Ports**: Tentukan port yang akan digunakan, seperti `8080:80`.
+   - **Optional Settings**: Atur opsi tambahan seperti volume atau environment variable jika diperlukan.
