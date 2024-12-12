@@ -20,16 +20,16 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 ```
-![Gambar dari Google Drive](https://drive.google.com/file/d/1pc9xJzHXlNxnNYowJiaBw2FGIgRwebak/view?usp=sharing)
+![WhatsApp Image 2024-12-12 at 21 19 08_8b458e6c](https://github.com/user-attachments/assets/ff999484-6502-4ac1-8e80-ed1136a75109)
 
 2.	Instal paket docker
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-![Gambar dari Google Drive](https://drive.google.com/file/d/1ebIAxptbWTtUlw5-Fd8uLVQohD7zUQmg/view?usp=sharing)
+![WhatsApp Image 2024-12-12 at 21 30 46_0096876f](https://github.com/user-attachments/assets/54aa057f-f0d0-433b-abc9-d02b867e37d0)
 
 3.	Verifikasi bahwa instalasi berhasil dengan menjalankan image hello-world:
 ```bash
 sudo docker run hello-world
 ```
-![Gambar dari Google Drive](https://drive.google.com/file/d/1kAb-ItYE3hRSj_BfBlju-BYY71QElw3Y/view?usp=sharing)
+![WhatsApp Image 2024-12-12 at 21 38 37_f163b4dd](https://github.com/user-attachments/assets/e53ff4c5-7c7d-482c-93da-71fe9e06f279)
