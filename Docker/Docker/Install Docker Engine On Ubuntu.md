@@ -22,5 +22,9 @@ sudo apt-get update
 ```
 ![Gambar dari Google Drive](https://drive.google.com/file/d/1pc9xJzHXlNxnNYowJiaBw2FGIgRwebak/view?usp=sharing)
 
-
+2.	Instal paket docker
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+![Gambar dari Google Drive](https://drive.google.com/file/d/1ebIAxptbWTtUlw5-Fd8uLVQohD7zUQmg/view?usp=sharing)
 
