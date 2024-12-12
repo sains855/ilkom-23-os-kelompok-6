@@ -217,7 +217,7 @@ Untuk menambahkan jumlah CPU yang dialokasikan ke kontainer saat menjalankan den
 ```bash
 $ docker run -d --name my-container --cpus="2.0" my-image
 ```
-## Bukti percobaan menambah cpu ke container
+## Bukti percobaan membatasi cpu ke container
 ![Gambar dari Google Drive](https://drive.google.com/uc?export=view&id=12sPlfAy1cw69Vtsd21bau2daukCbgv-8)
 
 
