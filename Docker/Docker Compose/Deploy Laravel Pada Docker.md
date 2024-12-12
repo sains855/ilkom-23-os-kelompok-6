@@ -1,6 +1,6 @@
 # Deploy Laravel pada Docker Compose
-Berikut adalah cara untuk deploy aplikasi laravel Anda menggunakan Docker.
-Langkah-Langkah Membuat Laravel Service
+Dokumentasi ini menjelaskan langkah-langkah untuk melakukan deploy aplikasi Laravel menggunakan Docker Compose.
+Langkah-Langkah Membuat Laravel Service:
  1. [Cek Status Docker](#1-Cek-Status-Docker)
  2. [Clone Aplikasi Projek ke Server](#2-Clone-Aplikasi-Projek-ke-Server)
  3. [Buat File docker-compose.yml](#3--Buat-File-docker-compose.yml)
@@ -9,26 +9,27 @@ Langkah-Langkah Membuat Laravel Service
  6. [Buat Container Untuk Menjalankan Aplikasi](#6-Buat-Container-Untuk-Menjalankan-Aplikasi)
  
 ## 1. Cek Status Docker
-Pastikan Docker sudah running dengan mengetikan perintah berikut: 
+Pastikan Docker sudah berjalan di server dengan mengetikkan perintah berikut:
 ```
 sudo systemctl status docker
 ```
 ## 2. Clone splikasi Projek ke Server
-Clone project yang ada di public repository ke server dengan perintah berikut:
+Clone project Laravel dari repository publik ke server menggunakan perintah berikut:
 ```
 git clone https://github.com/AyanGYdsti/si_perpus.git
 ```
-setelah selesai clone, selanjutnya masuk ke direktori project
+Setelah selesai, masuk ke direktori project:
 ```
 cd si-perpus
 ```
 ## 3. Buat File docker-compose.yml
-Selanjutnya kita akan membuat service web server, database, dan aplikasi.
-jalankan perintah berikut untuk membuat file docker-compose.yml
+File ```docker-compose.yml``` akan digunakan untuk mendefinisikan layanan web server, database, dan aplikasi Laravel.
+Buat file ```docker-compose.yml``` dengan perintah:
+
 ```
 nano docker-compose.yml
 ```
-lalu masukan script berikut:
+Masukkan konfigurasi berikut ke dalam file:
 ```
 version: "3.7"
 services:
@@ -80,8 +81,8 @@ networks:
     driver: bridge
 ```
 ## 4. Buat Konfigurasi Nginx
-Selanjutnya buat file konfigurasi Nginx.
-Ketikan perintah berikut untuk membuat direktori tempat file config
+Konfigurasi Nginx diperlukan untuk mengarahkan request ke aplikasi Laravel.
+Buat direktori untuk file konfigurasi:
 ```
 mkdir -p docker-compose/nginx
 ```
@@ -113,7 +114,7 @@ server {
 }
 ```
 ## 5. Buat File Dockerfile
-Dockerfile ini digunakan untuk build aplikasi menjadi sebuah image
+```Dockerfile``` ini digunakan untuk build aplikasi menjadi sebuah image
 buat file Dockerfile dengan perintah berikut:
 ```
 nano Dockerfile
@@ -139,11 +140,15 @@ WORKDIR /var/www
 USER $user
 ```
 ## 6. Buat Container Untuk Menjalankan Aplikasi
-Ketikan perintah berikut untuk build aplikasi menjadi image
+Setelah semua file siap, jalankan perintah berikut:
+Build aplikasi Laravel menjadi sebuah image:
 ```
 docker-compose build app
 ```
-Selanjutnya lakukan docker-compose untuk menjalankan image menjadi container 
+Jalankan aplikasi Laravel dalam container:
 ```
 docker-compose up -d
 ```
+
+Hasil akhir aplikasi berjalan di browser:
+![image](https://github.com/user-attachments/assets/aacdb225-6ade-4567-9f1b-8f7e3133e4db)
