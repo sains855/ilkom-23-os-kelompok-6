@@ -25,3 +25,8 @@ docker build -t nama-image .
 Berikut contoh gambarnya
 ![Deskripsi Gambar](https://drive.google.com/uc?id=1hVu0TjS1xypN2BqXSjA8Ntk9ikpB2n2B)
 8. Image sudah terbuild, selanjutnya lanjut untuk menjalankan container dari image yang sudah ada dengan Docker Desktop
+
+### 3. Menjalankan Docker Image
+1. Buka **Docker Desktop** dan masuk ke tab **Images**.
+2. Pastikan image yang akan digunakan sudah tersedia.
+3. Cari image yang ingin dijalankan pada daftar yang tersedia.
