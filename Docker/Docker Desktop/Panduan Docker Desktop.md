@@ -21,7 +21,7 @@ EXPOSE 80
 4. Buat satu folder bernama php, lalu masuk ke dalamnya dan buat satu file bernama index.php.
 5. Masukkan syntax php ke dalam file tersebut, contohnya "Hello World".
 6. Kembali ke direktori sebelumnya yang telah anda buat.
-7. Lakukan Perintah untk membuild image.
+7. Lakukan Perintah berikut untuk membuild image.
 ```bash
 docker build -t nama-image .
 ```
