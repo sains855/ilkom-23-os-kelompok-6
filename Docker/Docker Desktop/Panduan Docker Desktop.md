@@ -38,7 +38,7 @@ Berikut contoh gambarnya
    - **Container Name**: Masukkan nama untuk container.
    - **Ports**: Tentukan port yang akan digunakan, seperti `8080:80`.
    - **Optional Settings**: Atur opsi tambahan seperti volume atau environment variable jika diperlukan.
-   6. Klik **Run** untuk memulai container.
+6. Klik **Run** untuk memulai container.
    ![Gambar dari Google Drive](https://drive.google.com/uc?id=1HoSK3q1-PJIfawhGrFGs0nWGpAnnkPm_)
 
 ### 4. Periksa Apakah Container Sudah Berjalan Pada Tab Container
@@ -47,5 +47,5 @@ Berikut contoh gambarnya
 
 ### 5. Jika Sudah Berjalan Kunjungi Port Sesuai Dengan Container Yang Ada
 1. Jika website berhasil terbuka artinya container berjalan tanpa error.
-Output Web:
+2. Output Web:
    ![Gambar dari Google Drive](https://drive.google.com/uc?id=1je6n2V0eSlsqPRYPIrdC3zJ5FvbiArJE)
