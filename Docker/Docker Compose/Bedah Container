@@ -1,0 +1,6 @@
+# 1. Command ps aux
+Menampilkan semua proses yang sedang berjalan di dalam container. Ini berguna untuk menganalisis aplikasi atau proses yang sedang dijalankan dalam container.
+
+```
+ps aux
+```
