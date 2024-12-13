@@ -13,7 +13,7 @@ Pastikan Docker sudah berjalan di server dengan mengetikkan perintah berikut:
 ```
 sudo systemctl status docker
 ```
-## 2. Clone splikasi Projek ke Server
+## 2. Clone aplikasi Projek ke Server
 Clone project Laravel dari repository publik ke server menggunakan perintah berikut:
 ```
 git clone https://github.com/AyanGYdsti/si_perpus.git
