@@ -150,26 +150,28 @@ Jalankan aplikasi Laravel dalam container:
 docker-compose up -d
 ```
 
-Akses Aplikasi di Browser 
+### Akses Aplikasi di Browser 
 
 http://127.0.0.1:8000/
 
-Menampilan Status Docker Telah Berjalan
+### Menampilan Status Docker Telah Berjalan
 ![image](https://github.com/user-attachments/assets/f9634440-069b-43aa-88eb-a75548963f25)
 
-Hasil akhir aplikasi berjalan di browser:
+### Hasil akhir aplikasi berjalan di browser:
 ![image](https://github.com/user-attachments/assets/aacdb225-6ade-4567-9f1b-8f7e3133e4db)
 
-Melakukan Pembatasan Memory dan CPU
+## Melakukan Pembatasan Memory dan CPU
 
-MELAKUKAN PEMBATASAN MEMORI
+### Melakukan Pembatasan Memory
 Limit memory pada si-perpus-container
 ```
  docker update --memory=512m --memory-swap=1g si-perpus-container
 ```
+gunakan Perintah ```docker stats``` digunakan untuk menampilkan statistik penggunaan sumber daya (seperti CPU, memori, disk, dan I/O jaringan) dari container yang sedang berjalan.
+
 ![image](https://github.com/user-attachments/assets/5a2e9515-3b23-42e2-8e14-526c20fdd22a)
 
-MELAKUKAN PEMBATASAN CPU
+### Melakukan Pembatasan CPU
 Limit  CPU pada si-perpus-container
 ```
 docker update --cpus="1.5" af2dec0cfe9b
