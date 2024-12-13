@@ -167,13 +167,12 @@ Limit memory pada si-perpus-container
 ```
  docker update --memory=512m --memory-swap=1g si-perpus-container
 ```
-![image](https://github.com/user-attachments/assets/5eff0b1b-a9dc-4db9-9734-a3320e03672a)
+![image](https://github.com/user-attachments/assets/5a2e9515-3b23-42e2-8e14-526c20fdd22a)
 
 MELAKUKAN PEMBATASAN CPU
 Limit  CPU pada si-perpus-container
 ```
 docker update --cpus="1.5" af2dec0cfe9b
 ```
-
-![image](https://github.com/user-attachments/assets/5a2e9515-3b23-42e2-8e14-526c20fdd22a)
+![image](https://github.com/user-attachments/assets/e8f97e9b-b3c7-498b-8eb7-a2962d836477)
 
