@@ -39,7 +39,7 @@ Berikut contoh gambarnya
    - **Ports**: Tentukan port yang akan digunakan, seperti `8080:80`.
    - **Optional Settings**: Atur opsi tambahan seperti volume atau environment variable jika diperlukan.
    6. Klik **Run** untuk memulai container.
-   ![Gambar dari Google Drive](https://drive.google.com/uc?id=1HoSK3q1-PJIfawhGrFGs0nWGpAnnkPm_)
+   ![Deskripsi Gambar](https://drive.google.com/uc?id=1bFhYinGrG4fNUiXQzC8WvnTjhFn9yGK1)
 
 ### 4. Periksa Apakah Container Sudah Berjalan Pada Tab Container
 1. Jika sudah berjalan icon kolom action akan berbentuk kotak
