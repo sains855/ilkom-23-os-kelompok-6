@@ -19,7 +19,35 @@ RUN apt update && apt install nano -y
 EXPOSE 80
 ```
 4. Buat satu folder bernama php, lalu masuk ke dalamnya dan buat satu file bernama index.php.
-5. Masukkan syntax php ke dalam file tersebut, contohnya "Hello World".
+5. Masukkan syntax php ke dalam file tersebut, contohnya "Hello World". Atau anda bisa memasukkan syntax di bawah ini.
+```bash
+<?php
+// Start the session
+session_start();
+
+// Hardcoded user credentials (for demonstration purposes)
+$valid_username = "admin";
+$valid_password = "password123";
+
+// Initialize error message
+$error_message = "";
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    if ($username === $valid_username && $password === $valid_password) {
+        // Store username in session and redirect to a protected page
+        $_SESSION['username'] = $username;
+        header("Location: dashboard.php");
+        exit;
+    } else {
+        $error_message = "Invalid username or password.";
+    }
+}
+?>
+```
 6. Kembali ke direktori sebelumnya yang telah anda buat.
 7. Lakukan Perintah berikut untuk membuild image.
 ```bash
